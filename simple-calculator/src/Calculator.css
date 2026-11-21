@@ -1,0 +1,96 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.calculator {
+  width: 340px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #000000;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.calculator h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.display {
+  width: 100%;
+  height: 65px;
+  margin-bottom: 18px;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+  color: white;
+  background: #383838;
+  border: 2px solid #111111;
+  border-radius: 5px;
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button {
+  height: 55px;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #eeeeee;
+  color: #222222;
+  transition: 0.2s ease;
+}
+
+.buttons button:hover {
+  background: #cccccc;
+  transform: scale(1.04);
+}
+
+.buttons button:active {
+  transform: scale(0.96);
+}
+
+.buttons .clear {
+  grid-column: span 4;
+  background: #e50936;
+  color: white;
+  font-size: 24px;
+}
+
+.buttons .clear:hover {
+  background: #bd0029;
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+
+.buttons .delete {
+  grid-column: span 2;
+  background: #ffb347;
+  color: #222;
+  font-weight: bold;
+}
+
+.buttons .clear {
+  grid-column: span 2;
+  background: crimson;
+  color: white;
+  font-weight: bold;
+}
